@@ -10,12 +10,15 @@ function checkForm2() {
     let cErr = $("#calErr");
     let dErr = $("#dayErr");
     let mErr = $("#mealErr");
+
+    console.log(day.val())
     // tsekataan että päivä on valittu, lisätään virheilmoitus jos näin ei ole
-    if (day.val() === "") {
+    let chosenDay = day.val();
+    if (!chosenDay) {
       console.log("Päivä pitää olla valittuna");
   
       day.css("outline","3px solid red");
-      dErr.html(`<p style="color:red" >Päivä pitää olla valittuna</p>`);
+      dErr.html(`<p style="color:red">Päivä pitää olla valittuna</p>`);
       x = false;
     } else {
       // tyhjennetään virheilmoitukset
@@ -23,15 +26,16 @@ function checkForm2() {
       dErr.html("");
     }
     // tsekataan että ateria valittu
-    if (meal.val() === "") {
+    let chosenMeal = meal.val();
+    if (!chosenMeal) {
       console.log("Ateria pitää olla valittuna");
   
       meal.css("outline","3px solid red");
-      mErr.html(`<p style="color:red" >Ateria pitää olla valittuna</p>`);
+      mErr.html(`<p style="color:red">Ateria pitää olla valittuna</p>`);
       x = false;
     } else {
       //tyhjennetään virheilmoitukset
-      meal.css("outline","3px solid red");
+      meal.css("outline","");
       mErr.html("");
     }
   
