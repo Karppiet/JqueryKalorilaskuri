@@ -11,39 +11,39 @@ function checkForm2() {
     let dErr = $("#dayErr");
     let mErr = $("#mealErr");
     // tsekataan että päivä on valittu, lisätään virheilmoitus jos näin ei ole
-    if (day.val("")) {
+    if (day.val() === "") {
       console.log("Päivä pitää olla valittuna");
   
       day.css("outline","3px solid red");
-      dErr.html = ("<p style=color:red>Päivä pitää olla valittuna</p>");
+      dErr.html(`<p style="color:red" >Päivä pitää olla valittuna</p>`);
       x = false;
     } else {
       // tyhjennetään virheilmoitukset
       day.css("outline","");
-      dErr.html= ("");
+      dErr.html("");
     }
     // tsekataan että ateria valittu
-    if (meal.value == "") {
+    if (meal.val() === "") {
       console.log("Ateria pitää olla valittuna");
   
       meal.css("outline","3px solid red");
-      mErr.innerHTML = `<p style="color:red">Ateria pitää olla valittuna</p>`;
+      mErr.html(`<p style="color:red" >Ateria pitää olla valittuna</p>`);
       x = false;
     } else {
       //tyhjennetään virheilmoitukset
-      meal.style.outline = "";
-      mErr.innerHTML = "";
+      meal.css("outline","3px solid red");
+      mErr.html("");
     }
   
     // tsekataan syötetty määärä kaloreita ja muutetaan x falseksi jos luvut eivät täsmää
-    if (kcal.value < 1 || kcal.value > 3000 || isNaN(kcal.value) == true) {
-      kcal.style.border = "3px solid red";
-      cErr.innerHTML = `<p style="color:red">Kalorit pitää olla väliltä 1-3000 kcal</p>`;
+    if (kcal.val() < 1 || kcal.val() > 3000 || isNaN(kcal.val()) == true) {
+      kcal.css("outline","3px solid red");
+      cErr.html(`<p style="color:red">Kalorit pitää olla väliltä 1-3000 kcal</p>`);
       x = false;
     } else {
       // tyhjennetään virheilmoitukset
-      kcal.style.border = "";
-      cErr.innerHTML = "";
+      kcal.css("outline","")
+      cErr.html("");
     }
   
     // jos x jää true arvolle ajetaan calculateIntake funktio sekä tyhjennetään virheilmoitukset
@@ -53,7 +53,7 @@ function checkForm2() {
       // day.style.outline = "";
       // meal.style.outline = "";
       // kcal.style.border = "";
-        kcal.value = "";
+        kcal.val() === "";
       
       // dErr.innerHTML = "";
       // mErr.innerHTML = "";
