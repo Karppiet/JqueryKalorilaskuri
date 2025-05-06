@@ -11,22 +11,22 @@ function checkForm2() {
     let dErr = $("#dayErr");
     let mErr = $("#mealErr");
     // tsekataan että päivä on valittu, lisätään virheilmoitus jos näin ei ole
-    if (day.value == "") {
+    if (day.val("")) {
       console.log("Päivä pitää olla valittuna");
   
       day.css("outline","3px solid red");
-      dErr.innerHTML = `<p style="color:red">Päivä pitää olla valittuna</p>`;
+      dErr.html = ("<p style=color:red>Päivä pitää olla valittuna</p>");
       x = false;
     } else {
       // tyhjennetään virheilmoitukset
       day.css("outline","");
-      dErr.innerHTML = "";
+      dErr.html= ("");
     }
     // tsekataan että ateria valittu
     if (meal.value == "") {
       console.log("Ateria pitää olla valittuna");
   
-      meal.style.outline = "3px solid red";
+      meal.css("outline","3px solid red");
       mErr.innerHTML = `<p style="color:red">Ateria pitää olla valittuna</p>`;
       x = false;
     } else {
