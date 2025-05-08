@@ -116,49 +116,57 @@ function checkForm2() {
   function createTable() {
     let storedData = JSON.parse(localStorage.getItem("energyLog")) || [];
     // valitaan tablearea sekä luodaan taulukko ja sen osat
-    let tablearea = document.querySelector("#tablearea");
-    let table = document.createElement("table");
-    let thead = document.createElement("thead");
-    let tbody = document.createElement("tbody");
+    let tablearea = $('#tablearea');
+    let table = $('<table>');
+    let thead = $('<thead>');
+    let tbody = $('<tbody>');
     //luodaan taulukon otsikot arrayhin
-    let headerRow = document.createElement("tr");
+    let headerRow = $('<tr>');
     let headers = ["Päivä", "Ateria", "Kalorit"];
     // ajetaan jokaiselle headersin funktio joka luo otsikkotason rivit
     headers.forEach((headerText) => {
-      let th = document.createElement("th");
-      th.textContent = headerText;
-      headerRow.appendChild(th);
+      let th = $('<th>');
+      th.text(headerText);
+      // th.textContent = headerText;
+      $(th).append(headerRow);
+      // headerRow.appendChild(th);
     });
     // sijoittaa lapsielementin headerRow theadiin
-    thead.appendChild(headerRow);
+    $(thead).append(headerRow);
   
     // loopin avulla luodaan body tason rivit
     for (let i = 0; i < storedData.length; i++) {
-      let tr = document.createElement("tr");
+      let tr = $('<tr>');
+      // let tr = document.createElement("tr");
+      let td = $('<td>');
+      // let td = document.createElement("td");
+      td.text(storedData[i].day);
+      
+      let tdEating = $('<td>');
+      // let tdEating = document.createElement("td");
+      tdEating.text(storedData[i].eating);
   
-      let td = document.createElement("td");
-      td.textContent = storedData[i].day;
-  
-      let tdEating = document.createElement("td");
-      tdEating.textContent = storedData[i].eating;
-  
-      let tdCal = document.createElement("td");
-      tdCal.textContent = storedData[i].calories;
+      let tdCal = $('<td>');
+      tdCal.text(storedData[i].calories);
   
       //liitetään rivit lapsielementteinä riviin
-      tr.appendChild(td);
-      tr.appendChild(tdEating);
-      tr.appendChild(tdCal);
-      tbody.appendChild(tr);
+      tr.append(td)
+      tr.append(tdEating)
+      tr.append(tdCal);
+      tbody.append(tr);
+      // tbody.appendChild(tr);
     }
     // liitetän headi ja body taulukkoon lapsielementtinä
-    table.style.color = "white";
-    table.appendChild(thead);
-    table.appendChild(tbody);
+    $(table).css('color', 'white');
+    $(thead).append(table);
+    $(tbody).append(table);
+    // table.appendChild(thead);
+    // table.appendChild(tbody);
     //tyhjätään taulukko duplikaattien muodostumisen varalle
-    tablearea.innerHTML = "";
+    tablearea.html("");
     // liitetään taulukko tableareaan lapsielementtinä
-    tablearea.appendChild(table);
+    $(table).append(tablearea);
+    // tablearea.appendChild(table);
   }
   
   function energySum() {
@@ -177,9 +185,9 @@ function checkForm2() {
     console.log(sum);
   
     //haetaan energyResults div IDn avulla
-    let result = document.querySelector("#energyResults");
+    let result = $('#energyResults');
   
     // liitetään sum muuttuja h3 tagin sisällä diviin
-    result.innerHTML = `<h3>Yhteensä: ${sum} KCAL</h3>`;
+    result.html = (`<h3>Yhteensä: ${sum} KCAL</h3>`);
   }
   
