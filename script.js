@@ -144,7 +144,7 @@ function checkForm2() {
       
       let tdEating = $('<td>').text(storedData[i].eating);
       // let tdEating = document.createElement("td");
-      // tdEating.text(storedData[i].eating);
+      
   
       let tdCal = $('<td>').text(storedData[i].calories);
       // tdCal.text(storedData[i].calories);
@@ -153,14 +153,13 @@ function checkForm2() {
       tr.append(td, tdEating, tdCal);
       tbody.append(tr);
     
-      // tbody.appendChild(tr);
+      
     }
     // liitetän headi ja body taulukkoon lapsielementtinä
     table.css('color', 'white');
     table.append(thead);
     table.append(tbody);
-    // table.appendChild(thead);
-    // table.appendChild(tbody);
+   
     //tyhjätään taulukko duplikaattien muodostumisen varalle
     tablearea.html("");
     // liitetään taulukko tableareaan lapsielementtinä
