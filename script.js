@@ -125,14 +125,14 @@ function checkForm2() {
     let headers = ["Päivä", "Ateria", "Kalorit"];
     // ajetaan jokaiselle headersin funktio joka luo otsikkotason rivit
     headers.forEach((headerText) => {
-      let th = $('<th>');
-      th.text(headerText);
+      let th = $('<th>').text(headerText);
+      headerRow.append(th);
       // th.textContent = headerText;
-      $(th).append(headerRow);
+     
       // headerRow.appendChild(th);
     });
     // sijoittaa lapsielementin headerRow theadiin
-    $(thead).append(headerRow);
+    thead.append(headerRow);
   
     // loopin avulla luodaan body tason rivit
     for (let i = 0; i < storedData.length; i++) {
@@ -142,30 +142,29 @@ function checkForm2() {
       // let td = document.createElement("td");
       td.text(storedData[i].day);
       
-      let tdEating = $('<td>');
+      let tdEating = $('<td>').text(storedData[i].eating);
       // let tdEating = document.createElement("td");
-      tdEating.text(storedData[i].eating);
+      // tdEating.text(storedData[i].eating);
   
-      let tdCal = $('<td>');
-      tdCal.text(storedData[i].calories);
+      let tdCal = $('<td>').text(storedData[i].calories);
+      // tdCal.text(storedData[i].calories);
   
       //liitetään rivit lapsielementteinä riviin
-      tr.append(td)
-      tr.append(tdEating)
-      tr.append(tdCal);
+      tr.append(td, tdEating, tdCal);
       tbody.append(tr);
+    
       // tbody.appendChild(tr);
     }
     // liitetän headi ja body taulukkoon lapsielementtinä
-    $(table).css('color', 'white');
-    $(thead).append(table);
-    $(tbody).append(table);
+    table.css('color', 'white');
+    table.append(thead);
+    table.append(tbody);
     // table.appendChild(thead);
     // table.appendChild(tbody);
     //tyhjätään taulukko duplikaattien muodostumisen varalle
     tablearea.html("");
     // liitetään taulukko tableareaan lapsielementtinä
-    $(table).append(tablearea);
+    tablearea.append(table);
     // tablearea.appendChild(table);
   }
   
@@ -188,6 +187,6 @@ function checkForm2() {
     let result = $('#energyResults');
   
     // liitetään sum muuttuja h3 tagin sisällä diviin
-    result.html = (`<h3>Yhteensä: ${sum} KCAL</h3>`);
+    result.html(`<h3>Yhteensä: ${sum} KCAL</h3>`);
   }
   
