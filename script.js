@@ -72,9 +72,9 @@ function checkForm2() {
     // estetään lomakkeen uudelleenlataus
     event.preventDefault();
     // haetaan arvot
-    let weekday = document.querySelector("#day").value;
-    let eat = document.querySelector("#eating").value;
-    let cal = document.querySelector("#kcal").value;
+    let weekday = $("#day").val();
+    let eat = $("#eating").val();
+    let cal = $("#kcal").val();
     // logataan arvoja
     console.log(weekday, eat, cal);
     // luodaan objekti
