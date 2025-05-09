@@ -187,6 +187,6 @@ function checkForm2() {
     let result = $('#energyResults');
   
     // liitetään sum muuttuja h3 tagin sisällä diviin
-    result.html(`<h3>Yhteensä: ${sum} KCAL</h3>`);
+    result.hide().html(`<h3>Yhteensä: ${sum} KCAL</h3>`).fadeIn(1000);
   }
   
