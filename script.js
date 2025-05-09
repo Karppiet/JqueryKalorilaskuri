@@ -138,9 +138,9 @@ function checkForm2() {
     for (let i = 0; i < storedData.length; i++) {
       let tr = $('<tr>');
       // let tr = document.createElement("tr");
-      let td = $('<td>');
+      let td = $('<td>').text(storedData[i].day);
       // let td = document.createElement("td");
-      td.text(storedData[i].day);
+      // td.text(storedData[i].day);
       
       let tdEating = $('<td>').text(storedData[i].eating);
       // let tdEating = document.createElement("td");
@@ -150,7 +150,7 @@ function checkForm2() {
       // tdCal.text(storedData[i].calories);
   
       //liitetään rivit lapsielementteinä riviin
-      tr.append(td, tdEating, tdCal);
+      tr.hide().append(td, tdEating, tdCal).fadeIn(1000);
       tbody.append(tr);
     
       
@@ -164,6 +164,7 @@ function checkForm2() {
     tablearea.html("");
     // liitetään taulukko tableareaan lapsielementtinä
     tablearea.append(table);
+    // tablearea.hide().append(table).fadeIn(1000);
     // tablearea.appendChild(table);
   }
   
