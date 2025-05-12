@@ -31,12 +31,12 @@ kalorimäärät ja muut tiedot tulostuvat lomakkeen alle.
 Sovelluksessa on käyttety Html, Css, Bootstrap sekä Javascript ja jQuery teknologioita.
 
 ## Asennus
-Sovellus toimii selaimessa osoitteessa: https://kalorilaskuri.netlify.app/
-
+Sovellus toimii selaimessa osoitteessa: [https://kalorilaskuri.netlify.app/
+](https://jquerykalorilaskuri.netlify.app/)
 ## Lähteet
 Olen käyttänyt sovelluksen bootstrap ja css määritelmissä seuraavaa materiaalia https://codepen.io/samnorton/pen/oNYajYM.
-Javascriptin ongelmatilanteissa olen käyttänyt https://stackoverflow.com sivustoa apuna.
-ChatGptä olen käyttänyt umpikujissa virheiden etsimiseen javascript koodista.
+Javascriptin sekä jQuery ongelmatilanteissa olen käyttänyt https://stackoverflow.com sivustoa apuna.
+ChatGptä olen käyttänyt umpikujissa virheiden etsimiseen javascript sekä jQuery koodista.
 
 ## Lisenssi
 
