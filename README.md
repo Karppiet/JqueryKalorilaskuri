@@ -2,7 +2,7 @@
 
 
 ## Demon linkki
-https://kalorilaskuri.netlify.app/
+[https://kalorilaskuri.netlify.app/](https://jquerykalorilaskuri.netlify.app/)
 
 
 
