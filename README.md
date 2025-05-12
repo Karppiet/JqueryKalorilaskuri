@@ -16,19 +16,19 @@
 - [Lisenssi](#license)
 
 ## Sovelluksesta
-Kalorilaskuri on sovellus, jonka avulla voidaan laskea henkilön päivittäinen 
-kalorintarve sekä kirjata päivittäisten aterioiden kalorimääriä. Lomakkeeseen täytetään tarvittavat tiedot ja painetaan lähetä, jonka jälkeen 
+Kalorilaskuri on sovellus, jonka avulla voidaan kirjata päivittäisten aterioiden kalorimääriä. Lomakkeeseen täytetään tarvittavat tiedot ja painetaan lähetä, jonka jälkeen 
 kalorimäärät ja muut tiedot tulostuvat lomakkeen alle.
 
 ## Kuvat
 
 
+![image](https://github.com/user-attachments/assets/2531eb4b-23ea-45ef-82d0-b70fc97afa97)
 
 
 
 
 ## Teknologiat
-Sovelluksessa on käyttety Html, Css, Bootstrap sekä Javascript teknologioita.
+Sovelluksessa on käyttety Html, Css, Bootstrap sekä Javascript ja jQuery teknologioita.
 
 ## Asennus
 Sovellus toimii selaimessa osoitteessa: https://kalorilaskuri.netlify.app/
