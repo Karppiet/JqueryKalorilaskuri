@@ -37,6 +37,7 @@ Sovellus toimii selaimessa osoitteessa: [https://kalorilaskuri.netlify.app/
 Olen käyttänyt sovelluksen bootstrap ja css määritelmissä seuraavaa materiaalia https://codepen.io/samnorton/pen/oNYajYM.
 Javascriptin sekä jQuery ongelmatilanteissa olen käyttänyt https://stackoverflow.com sivustoa apuna.
 ChatGptä olen käyttänyt umpikujissa virheiden etsimiseen javascript sekä jQuery koodista.
+https://www.w3schools.com/ sivustoa olen käyttänyt jQueryn efektien tekemisen tukena.
 
 ## Lisenssi
 
