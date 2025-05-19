@@ -193,7 +193,14 @@ function deleteAllData() {
       localStorage.clear();
       alert("Tiedot on poistettu");
     }else{
-
+      event.preventDefault()
     }
   }
+}
+
+
+function showTable(){
+  event.preventDefault();
+  createTable();
+  energySum();
 }
