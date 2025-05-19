@@ -186,9 +186,14 @@ function energySum() {
 }
 
 function deleteAllData() {
-  if (confirm("Tämä poistaa kaikki tiedot, oletko varma?")) {
-    localStorage.clear();
-    alert("Tiedot on poistettu")
-  } else {
+  if (window.localStorage.length === 0){ 
+    alert("Ei poistettavia tietoja")
+  }else {
+    if (confirm("Tämä poistaa kaikki tiedot, oletko varma?")) {
+      localStorage.clear();
+      alert("Tiedot on poistettu");
+    }else{
+
+    }
   }
 }
