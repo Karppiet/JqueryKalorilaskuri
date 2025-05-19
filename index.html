@@ -19,7 +19,7 @@
         <div class="form-holder">
           <div class="form-content">
             <div class="form-items">
-                <form action="#" name="energyForm2" onsubmit="checkForm2();">
+                <form action="#" name="energyForm2";>
                     <h3>Energiansaanti</h3>
                     <div class="col-md-12">
                       <div class="col-md-12">
@@ -60,7 +60,8 @@
                     </div>
     
                     <div class="form-button mt-3">
-                      <button id="submit" type="submit" class="btn btn-primary">
+                     
+                       <button onclick="checkForm2()" type="submit" class="btn btn-primary">
                         Lähetä
                       </button>
                     </div>
@@ -70,9 +71,13 @@
                     <div id="energyResults"></div>
     
                     <div class="form-button mt-3">
-                      <button  type="" class="btn btn-primary" onclick="deleteDataEntry()">
+                      <button class="btn btn-primary" onclick="deleteDataEntry()">
                         Poista uusin
                       </button>
+                      <button class="btn btn-primary" style='margin-left:16px; background-color:red' onclick="deleteAllData()">
+                        Poista kaikki
+                      </button>
+                    </div>                   
                   </form>
                 </div>
               </div>
