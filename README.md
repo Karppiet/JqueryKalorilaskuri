@@ -17,7 +17,7 @@
 
 ## Sovelluksesta
 Kalorilaskuri on sovellus, jonka avulla voidaan kirjata päivittäisten aterioiden kalorimääriä. Lomakkeeseen täytetään tarvittavat tiedot ja painetaan lähetä, jonka jälkeen 
-kalorimäärät ja muut tiedot tulostuvat lomakkeen alle. Näytä tiedot nappi näyttää tallennetut tiedot. Tietoja voi poistaa yksittäin tai kaikki kerrallaan.
+kalorimäärät ja muut tiedot tallentuvat sekä tulostuvat lomakkeen alle. Näytä tiedot nappi näyttää tallennetut tiedot. Tietoja voi poistaa yksittäin tai kaikki kerrallaan.
 
 ## Kuvat
 
