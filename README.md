@@ -1,8 +1,8 @@
-# Kalorilaskuri
+# jQueryKalorilaskuri
 
 
 ## Demon linkki
-[https://kalorilaskuri.netlify.app/](https://jquerykalorilaskuri.netlify.app/)
+[https://jquerykalorilaskuri.netlify.app/](https://jquerykalorilaskuri.netlify.app/)
 
 
 
