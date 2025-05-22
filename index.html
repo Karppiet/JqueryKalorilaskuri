@@ -19,77 +19,85 @@
         <div class="form-holder">
           <div class="form-content">
             <div class="form-items">
-                <form action="#" name="energyForm2">
-                    <h3>Energiansaanti</h3>
-                    <div class="col-md-12">
-                      <div class="col-md-12">
-                        <select class="form-select mt-3" id="day" name="day">
-                          <option selected disabled value="">Päivä</option>
-                          <option value="ma">Maanantai</option>
-                          <option value="ti">Tiistai</option>
-                          <option value="ke">Keskiviikko</option>
-                          <option value="to">Torstai</option>
-                          <option value="pe">Perjantai</option>
-                          <option value="la">Lauantai</option>
-                          <option value="su">Sunnuntai</option>
-                        </select>
-                        <span id="dayErr"></span>
-                      </div>
-    
-                      <div class="col-md-12">
-                        <select class="form-select mt-3" id="eating" name="eating">
-                          <option selected disabled value="">Ateria</option>
-                          <option value="aam">Aamiainen</option>
-                          <option value="lou">Lounas</option>
-                          <option value="päi">Päivällinen</option>
-                          <option value="ill">Illallinen</option>
-                          <option value="ilt">Iltapala</option>
-                          <option value="väl">Välipala</option>
-                        </select>
-                        <span id="mealErr"></span>
-                      </div>
-    
-                      <input
-                        class="form-control"
-                        type="text"
-                        name="kcal"
-                        placeholder="Kalorit(kcal)"
-                        id="kcal"
-                      />
-                      <span id="calErr"></span><br />
-                    </div>
-    
-                    <div class="form-button mt-3">
-                     
-                       <button onclick="checkForm2()" type="submit" class="btn btn-primary">
-                        Lähetä
-                      </button>
-                       <button onclick="showTable()" style='margin-left:16px' class="btn btn-primary">
-                        Näytä tiedot
-                      </button>
+              <form action="#" name="energyForm2">
+                <h3>Energiansaanti</h3>
+                <div class="col-md-12">
+                  <div class="col-md-12">
+                    <select class="form-select mt-3" id="day" name="day">
+                      <option selected disabled value="">Päivä</option>
+                      <option value="ma">Maanantai</option>
+                      <option value="ti">Tiistai</option>
+                      <option value="ke">Keskiviikko</option>
+                      <option value="to">Torstai</option>
+                      <option value="pe">Perjantai</option>
+                      <option value="la">Lauantai</option>
+                      <option value="su">Sunnuntai</option>
+                    </select>
+                    <span id="dayErr"></span>
+                  </div>
 
+                  <div class="col-md-12">
+                    <select class="form-select mt-3" id="eating" name="eating">
+                      <option selected disabled value="">Ateria</option>
+                      <option value="aam">Aamiainen</option>
+                      <option value="lou">Lounas</option>
+                      <option value="päi">Päivällinen</option>
+                      <option value="ill">Illallinen</option>
+                      <option value="ilt">Iltapala</option>
+                      <option value="väl">Välipala</option>
+                    </select>
+                    <span id="mealErr"></span>
+                  </div>
 
-                    </div>
-                    <br />
-                    <div id="tablearea"></div>
-    
-                    <div id="energyResults"></div>
-    
-                    <div class="form-button mt-3">
-                      <button class="btn btn-primary" onclick="deleteDataEntry()">
-                        Poista uusin
-                      </button>
-                      <button class="btn btn-primary" style='margin-left:16px; background-color:red' onclick="deleteAllData()">
-                        Poista kaikki
-                      </button>
-                    </div>                   
-                  </form>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="kcal"
+                    placeholder="Kalorit(kcal)"
+                    id="kcal"
+                  />
+                  <span id="calErr"></span><br />
                 </div>
-              </div>
+
+                <div class="form-button mt-3">
+                  <button
+                    onclick="checkForm2()"
+                    type="submit"
+                    class="btn btn-primary"
+                  >
+                    Lähetä
+                  </button>
+                  <button
+                    onclick="showTable()"
+                    style="margin-left: 16px"
+                    class="btn btn-primary"
+                  >
+                    Näytä tiedot
+                  </button>
+                </div>
+                <br />
+                <div id="tablearea"></div>
+
+                <div id="energyResults"></div>
+
+                <div class="form-button mt-3">
+                  <button class="btn btn-primary" onclick="deleteDataEntry()">
+                    Poista uusin
+                  </button>
+                  <button
+                    class="btn btn-primary"
+                    style="margin-left: 16px; background-color: red"
+                    onclick="deleteAllData()"
+                  >
+                    Poista kaikki
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-        <script src="script.js"></script>
-      </body>
-    </html>
-    
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
