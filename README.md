@@ -1,8 +1,8 @@
-# Kalorilaskuri
+# jQueryKalorilaskuri
 
 
 ## Demon linkki
-[https://kalorilaskuri.netlify.app/](https://jquerykalorilaskuri.netlify.app/)
+[https://jquerykalorilaskuri.netlify.app/](https://jquerykalorilaskuri.netlify.app/)
 
 
 
@@ -17,7 +17,7 @@
 
 ## Sovelluksesta
 Kalorilaskuri on sovellus, jonka avulla voidaan kirjata päivittäisten aterioiden kalorimääriä. Lomakkeeseen täytetään tarvittavat tiedot ja painetaan lähetä, jonka jälkeen 
-kalorimäärät ja muut tiedot tulostuvat lomakkeen alle. Näytä tiedot nappi näyttää tallennetut tiedot. Tietoja voi poistaa yksittäin tai kaikki kerrallaan.
+kalorimäärät ja muut tiedot tallentuvat sekä tulostuvat lomakkeen alle. Näytä tiedot nappi näyttää tallennetut tiedot. Tietoja voi poistaa yksittäin tai kaikki kerrallaan.
 
 ## Kuvat
 
@@ -34,8 +34,8 @@ kalorimäärät ja muut tiedot tulostuvat lomakkeen alle. Näytä tiedot nappi n
 Sovelluksessa on käyttety Html, Css, Bootstrap sekä Javascript ja jQuery teknologioita.
 
 ## Asennus
-Sovellus toimii selaimessa osoitteessa: [https://kalorilaskuri.netlify.app/
-](https://jquerykalorilaskuri.netlify.app/)
+Sovellus toimii selaimessa osoitteessa:[https://jquerykalorilaskuri.netlify.app/](https://jquerykalorilaskuri.netlify.app/)
+
 ## Lähteet
 Olen käyttänyt sovelluksen bootstrap ja css määritelmissä seuraavaa materiaalia https://codepen.io/samnorton/pen/oNYajYM.
 Javascriptin sekä jQuery ongelmatilanteissa olen käyttänyt https://stackoverflow.com sivustoa apuna.
