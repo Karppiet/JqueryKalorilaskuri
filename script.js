@@ -181,7 +181,7 @@ function energySum() {
   //haetaan energyResults div IDn avulla
   let result = $("#energyResults");
 
-  // liitetään sum muuttuja h3 tagin sisällä diviin sekä lisätään siihne fadeIn efekti
+  // liitetään sum muuttuja h3 tagin sisällä diviin sekä lisätään siihen fadeIn efekti
   result.hide().html(`<h3>Yhteensä: ${sum} KCAL</h3>`).fadeIn(1000);
 }
 
