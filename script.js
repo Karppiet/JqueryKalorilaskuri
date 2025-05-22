@@ -146,7 +146,7 @@ function createTable() {
     let tdCal = $("<td>").text(storedData[i].calories);
     // tdCal.text(storedData[i].calories);
 
-    //liitetään rivit lapsielementteinä riviin
+    //liitetään rivit lapsielementteinä riviin ja lisätään niihin fadeIn efekti
     tr.hide().append(td, tdEating, tdCal).fadeIn(1000);
     tbody.append(tr);
   }
@@ -181,7 +181,7 @@ function energySum() {
   //haetaan energyResults div IDn avulla
   let result = $("#energyResults");
 
-  // liitetään sum muuttuja h3 tagin sisällä diviin
+  // liitetään sum muuttuja h3 tagin sisällä diviin sekä lisätään siihne fadeIn efekti
   result.hide().html(`<h3>Yhteensä: ${sum} KCAL</h3>`).fadeIn(1000);
 }
 
