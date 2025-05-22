@@ -56,14 +56,7 @@ function checkForm2() {
   if (x == true) {
     calculateIntake();
 
-    // day.style.outline = "";
-    // meal.style.outline = "";
-    // kcal.style.border = "";
     kcal.val() === "";
-
-    // dErr.innerHTML = "";
-    // mErr.innerHTML = "";
-    // cErr.innerHTML = "";
   } else {
     console.log("täytä oikeat arvot");
   }
@@ -125,9 +118,6 @@ function createTable() {
   headers.forEach((headerText) => {
     let th = $("<th>").text(headerText);
     headerRow.append(th);
-    // th.textContent = headerText;
-
-    // headerRow.appendChild(th);
   });
   // sijoittaa lapsielementin headerRow theadiin
   thead.append(headerRow);
@@ -135,16 +125,12 @@ function createTable() {
   // loopin avulla luodaan body tason rivit
   for (let i = 0; i < storedData.length; i++) {
     let tr = $("<tr>");
-    // let tr = document.createElement("tr");
+
     let td = $("<td>").text(storedData[i].day);
-    // let td = document.createElement("td");
-    // td.text(storedData[i].day);
 
     let tdEating = $("<td>").text(storedData[i].eating);
-    // let tdEating = document.createElement("td");
 
     let tdCal = $("<td>").text(storedData[i].calories);
-    // tdCal.text(storedData[i].calories);
 
     //liitetään rivit lapsielementteinä riviin ja lisätään niihin fadeIn efekti
     tr.hide().append(td, tdEating, tdCal).fadeIn(1000);
@@ -159,8 +145,6 @@ function createTable() {
   tablearea.html("");
   // liitetään taulukko tableareaan lapsielementtinä
   tablearea.append(table);
-  // tablearea.hide().append(table).fadeIn(1000);
-  // tablearea.appendChild(table);
 }
 
 function energySum() {
@@ -186,20 +170,19 @@ function energySum() {
 }
 
 function deleteAllData() {
-  if (window.localStorage.length === 0){ 
-    alert("Ei poistettavia tietoja")
-  }else {
+  if (window.localStorage.length === 0) {
+    alert("Ei poistettavia tietoja");
+  } else {
     if (confirm("Tämä poistaa kaikki tiedot, oletko varma?")) {
       localStorage.clear();
       alert("Tiedot on poistettu");
-    }else{
-      event.preventDefault()
+    } else {
+      event.preventDefault();
     }
   }
 }
 
-
-function showTable(){
+function showTable() {
   event.preventDefault();
   createTable();
   energySum();
